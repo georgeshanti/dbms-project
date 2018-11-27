@@ -1,0 +1,32 @@
+body{
+    background: url('/static/images/memphis-colorful.png');
+}
+.splash-text {
+    padding: 15px;
+    padding-top: 15%;
+    font-size: 3.5em;
+}
+.navbar-brand img{
+    height: 25px;
+    float: left;
+}
+.search-bar input{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.search-bar button{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+.search-form {
+    margin-bottom: 30px;
+}
+.join-button{
+    float: right;
+    margin-right: 70px;
+}
+.search-text p{
+    padding-top: 10px;
+}

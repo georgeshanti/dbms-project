@@ -1,0 +1,4 @@
+create table users(id INTEGER PRIMARY KEY AUTOINCREMENT, username VARCHAR(30) NOT NULL UNIQUE, name VARCHAR(30) NOT NULL, pass VARCHAR(64) NOT NULL);
+create table groups(id INTEGER PRIMARY KEY AUTOINCREMENT, name VARCHAR(30) NOT NULL UNIQUE, desc VARCHAR(200));
+create table memberships(usr_id INTEGER NOT NULL, grp_id INTEGER NOT NULL,  admin BOOLEAN, FOREIGN KEY (usr_id) REFERENCES users(id), FOREIGN KEY (grp_id) REFERENCES groups(id));
+create table reminder(id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, grp_id INTEGER, time DATETIME NOT NULL, desc VARCHAR(200) NOT NULL, FOREIGN KEY (grp_id) REFERENCES groups(id));

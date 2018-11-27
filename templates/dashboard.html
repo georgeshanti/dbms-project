@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Group Calendar</title>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/login-modal.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="build/kalendae.css" type="text/css" charset="utf-8">
+	<script src="build/kalendae.standalone.js" type="text/javascript" charset="utf-8"></script>
+	
+	
+</head>
+<body>
+
+	
+	
+	
+	<script type="text/javascript" charset="utf-8">
+		new Kalendae({
+			attachTo:document.body,
+			months:5,
+			mode:'multiple',
+			selected:[Kalendae.moment().subtract({M:1}), Kalendae.moment().add({M:1})]
+		});
+		
+	</script>
+
+	
+</body>
+</html>
